@@ -7,7 +7,7 @@ import streamlit as st
 
 
 #Load the model
-model = load_model(r'C:\Users\namid\Documents\Projet PFE\StockPredictionModel.h5')
+model = load_model(r'StockPredictionModel.h5')
 model.compile(optimizer='adam', loss='mean_squared_error')
 
 #Load the data
