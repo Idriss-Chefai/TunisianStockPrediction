@@ -4,6 +4,7 @@ import yfinance as yf
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st 
+import pickle 
 
 
 #Load the model
