@@ -1,7 +1,7 @@
 <div class="container">
     <div class="stock-details">
       <h2>Stock Details</h2>
-      <div *ngIf="stock">
+      <div >
         <h3>{{ stock?.name }}</h3>
         <img [src]="stock?.logoUrl" alt="{{ stock?.name }} Logo" height="100" width="100">
         <p>Gain/Loss since Yesterday: {{ stock?.gainOrLoss }}%</p>

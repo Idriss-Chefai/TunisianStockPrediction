@@ -5,8 +5,8 @@ import { StockDetailComponent } from './stock-detail/stock-detail.component';
 
 
 export const routes: Routes = [
-    {path:'',redirectTo:"home", pathMatch:"full"},
-    {path:'home',component: HomeComponent},
+    {path:'',redirectTo:"dashboard", pathMatch:"full"},
+    {path:'StockList',component: HomeComponent},
     {path:'dashboard',component: DashboardComponent},
     {path:'stock/:id',component : StockDetailComponent},
 ];

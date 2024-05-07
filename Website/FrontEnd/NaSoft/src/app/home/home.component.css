@@ -1,29 +1,88 @@
-/* body.component.css */
+.container {
+  padding: 20px;
+  max-width: 800px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #333;
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tr:hover {
-    background-color: lightgray;
-  }
-  
-  .positive {
-    color: green;
-  }
-  
-  .negative {
-    color: red;
-  }
-  
-  /* Cursor style for clickable rows */
-  tr {
-    cursor: pointer;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #f8f9fa; /* Light background color */
+  border: 4px solid #495057; /* Add thicker outer border to the table */
+  border-radius: 8px; /* Add border radius */
+  overflow: hidden; /* Hide overflow to prevent double scrollbar */
+}
+
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc; /* Add border for the container */
+  border-radius: 8px; /* Add border radius */
+}
+
+/* Customize scrollbar */
+.table-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Change scrollbar track color */
+.table-container::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+thead {
+  background-color: #343a40; /* Darker header color */
+  color: #ffffff; /* White text color for header */
+}
+
+thead th {
+  padding: 12px; /* Increase padding */
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: lightgray; /* Hover background color */
+}
+
+td {
+  padding: 12px; /* Increase padding */
+  font-size: 14px; /* Increase font size */
+  cursor: pointer;
+}
+
+td img {
+  display: block;
+  margin: auto;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.neutral {
+  color: black;
+}

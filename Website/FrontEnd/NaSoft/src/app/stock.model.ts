@@ -1,8 +1,7 @@
 // stock.model.ts
 export interface Stock {
-    id: number;
-    name: string;
-    logoUrl: string;
-    gainOrLoss: number; // Example: +2.5 or -1.3
-  }
-  
+  name: string;
+  logoUrl: string;
+  closePrice: number;
+  change: number;
+}

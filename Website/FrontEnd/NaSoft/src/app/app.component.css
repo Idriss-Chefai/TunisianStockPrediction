@@ -4,6 +4,7 @@
   }
   
   .sidebar-container {
+    bottom : 200px;
     width: 200px; /* Set the width of the sidebar */
     background-color: #333; /* Adjust to fit your theme */
   }

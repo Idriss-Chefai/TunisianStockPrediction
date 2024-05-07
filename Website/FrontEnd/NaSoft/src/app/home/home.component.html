@@ -1,24 +1,26 @@
-<!-- body.component.html -->
-<div>
-    <h2>List of Stocks</h2>
+<div class="container">
+  <h2>Tunisian Stocks</h2>
+  <div class="table-container">
     <table>
       <thead>
         <tr>
           <th>Name</th>
           <th>Logo</th>
-          <th>Gain/Loss since Yesterday</th>
+          <th>Close Price</th>
+          <th>Change</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let stock of stocks" (click)="goToStockDetails(stock.id)">
+        <tr *ngFor="let stock of stocks" (click)="goToStockDetails(stock.name)">
           <td>{{ stock.name }}</td>
           <td><img [src]="stock.logoUrl" alt="{{ stock.name }} Logo" height="50" width="50"></td>
-          <td [ngClass]="{'positive': stock.gainOrLoss > 0, 'negative': stock.gainOrLoss < 0}">
-            {{ stock.gainOrLoss > 0 ? '+' : '' }}{{ stock.gainOrLoss }}%
+          <td>{{ stock.closePrice }}</td>
+          <td [ngClass]="{'positive': stock.change > 0, 'negative': stock.change < 0, 'neutral': stock.change === 0}">
+            {{ stock.change > 0 ? '+' : '' }}{{ stock.change }}%
           </td>
         </tr>
       </tbody>
     </table>
   </div>
-  
-  
+
+</div>

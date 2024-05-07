@@ -1,8 +1,8 @@
 .sidebar {
     width: 200px;
     height: 100%;
-    background-color: #34495e; /* Darker blue background */
-    color: #fff; /* White text color */
+    background-color: white; /* Light Gray */
+    color: #333333; /* Dark text */
     padding: 20px;
     box-sizing: border-box;
   }
@@ -14,7 +14,7 @@
     margin-bottom: 40px;
   }
   .menu li a {
-    color: #fff; /* White text color */
+    color: #333333; /* White text color */
     text-decoration: none;
   }
 
