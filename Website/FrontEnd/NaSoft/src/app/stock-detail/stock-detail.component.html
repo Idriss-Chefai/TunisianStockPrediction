@@ -1,11 +1,13 @@
-<div class="container">
-    <div class="stock-details">
-      <h2>Stock Details</h2>
-      <div >
-        <h3>{{ stock?.name }}</h3>
-        <img [src]="stock?.logoUrl" alt="{{ stock?.name }} Logo" height="100" width="100">
-        <p>Gain/Loss since Yesterday: {{ stock?.gainOrLoss }}%</p>
-        <!-- Add more details as needed -->
-      </div>
+<div *ngIf="stock" class="container">
+  <div class="stock-details">
+    <h2>Stock Details</h2>
+    <div>
+      <h3>{{ stock?.name }}</h3>
+      <img [src]="stock?.logoUrl" alt="{{ stock?.name }} Logo" height="100" width="100">
+      <p>Close Price: {{ stock?.closePrice }}</p>
+      <p>Change: {{ stock?.change }}</p>
+      <!-- Add more details as needed -->
     </div>
+  </div>
+  <button class="return-home-btn" (click)="goToHome()">Return Home</button>
 </div>

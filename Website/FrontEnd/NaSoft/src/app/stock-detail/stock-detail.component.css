@@ -1,27 +1,39 @@
-
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .stock-details {
-    background-color: #ffffff; /* White background */
-    border: 1px solid #dddddd; /* Light gray border */
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  .stock-details h2 {
-    color: #333333; /* Dark gray text color */
-  }
-  
-  .stock-details img {
-    display: block;
-    margin: 0 auto 20px; /* Center align image with margin bottom */
-  }
-  
-  .stock-details p {
-    margin-bottom: 10px;
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container .stock-details {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.container .stock-details h2 {
+  color: #333333; /* Dark gray text color */
+}
+
+.container .stock-details img {
+  display: block;
+  margin: 0 auto 20px; /* Center align image with margin bottom */
+}
+
+.container .stock-details p {
+  margin-bottom: 10px;
+}
+.return-home-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1A237E; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.return-home-btn:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}

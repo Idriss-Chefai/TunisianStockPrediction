@@ -10,7 +10,7 @@ import {RouterModule} from '@angular/router'
   imports: [
     RouterOutlet,
     CommonModule,
-    RouterModule,],
+    RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
