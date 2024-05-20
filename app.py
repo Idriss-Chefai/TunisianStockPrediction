@@ -5,7 +5,8 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st 
 import pickle 
-
+from flask import Flask, request, jsonify
+import joblib
 
 #Load the model
 model = load_model(r'StockPredictionModel.h5')
